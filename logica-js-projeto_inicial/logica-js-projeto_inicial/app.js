@@ -29,3 +29,10 @@ if(idadeDoUsuario >= 18){
 //}
 //botaoIniciar.addEventListener('click',iniciarJogo);
 //});
+
+
+//função para formatar o nome 
+function formatarNome(nomeDoUsuario){
+    return nomeDoUsuario.charAt(0).toUpperCase() + nomeDoUsuario.slice(1);
+}
+console.log(formatarNome(nomeDoUsuario));
