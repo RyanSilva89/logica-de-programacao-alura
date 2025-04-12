@@ -26,6 +26,6 @@ let idadeDoUsuario =prompt ("Digite a sua idade ")
 if(idadeDoUsuario >= 18){
     alert("Pode tirar a habilitação!");
 }
-}
+//}
 //botaoIniciar.addEventListener('click',iniciarJogo);
-});
+//});
