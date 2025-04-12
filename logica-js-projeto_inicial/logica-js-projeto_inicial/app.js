@@ -10,4 +10,6 @@ console.log(numeroSecreto)
 if(numeroSecreto == chute){
     alert ("Você acertou !");//se não for verdadeiro não irá mostrar a mesagem,será executando quando esssa condição for verdadeira.
 console.log("Você acertou!");//utilizado para fazer testes
+}else{
+    alert("Você errou!");//se não for verdadeiro,irá mostra a mensgem da condição se não/else.
 }
