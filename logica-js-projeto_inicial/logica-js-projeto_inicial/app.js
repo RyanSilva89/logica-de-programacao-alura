@@ -1,7 +1,5 @@
 const botaoIniciar = document.getElementById('start-button');
 function iniciarJogo(){
-    
-}
 //Mostre um alerta com a mensagem "Boas vindas ao nosso site!".
 alert("Boas vindas ao nosso site!")
 
@@ -25,3 +23,5 @@ let idadeDoUsuario =prompt ("Digite a sua idade ")
 if(idadeDoUsuario >= 18){
     alert("Pode tirar a habilitação!");
 }
+}
+botaoIniciar.addEventListener('click',iniciarJogo);
