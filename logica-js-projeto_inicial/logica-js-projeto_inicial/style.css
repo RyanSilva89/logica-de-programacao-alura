@@ -86,3 +86,17 @@ h2 {
     font-size: 32px;
     font-weight: 400;
 }
+#start-button {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno (altura e largura) */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Retira o sublinhado (caso seja um link) */
+    display: inline-block; /* Faz o botão se comportar como um item em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor quando passa sobre o botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação suave para hover */
+}
