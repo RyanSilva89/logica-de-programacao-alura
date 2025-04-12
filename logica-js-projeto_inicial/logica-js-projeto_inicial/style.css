@@ -1,3 +1,4 @@
+/* Reseta as margens e bordas, além de definir o box-sizing */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,7 @@
     color: white;
 }
 
+/* Estilo do fundo da página */
 body {
     background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
     height: 100vh;
@@ -13,7 +15,7 @@ body {
     justify-content: center;
 }
 
-
+/* Fundo da página com a imagem */
 body::before {
     background-image: url("img/code.png");
     background-repeat: no-repeat;
@@ -26,6 +28,7 @@ body::before {
     opacity: 0.4;
 }
 
+/* Estilo principal da área onde o conteúdo é exibido */
 .container {
     width: 1200px;
     height: 600px;
@@ -40,6 +43,7 @@ body::before {
     position: relative;
 }
 
+/* Alinhamento do conteúdo dentro da container */
 .container__conteudo {
     display: flex;
     align-items: center;
@@ -47,9 +51,20 @@ body::before {
     bottom: 0;
 }
 
+/* Estilo da parte informativa dentro da container */
 .container__informacoes {
     flex: 1;
     padding: 20px;
+}
+
+/* Estilo do botão e da área de texto */
+.container__botao-container {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    align-items: center; /* Centraliza o botão verticalmente */
+    position: absolute; /* Faz o botão flutuar sobre a tela */
+    bottom: 20px; /* Ajuste a posição do botão para estar mais baixo */
+    width: 100%; /* Garante que ocupe toda a largura da container */
 }
 
 .container__botao {
@@ -63,6 +78,35 @@ body::before {
     margin-top: 16px;
 }
 
+/* Estilo do botão */
+#start-button {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno (altura e largura) */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Retira o sublinhado (caso seja um link) */
+    display: inline-block; /* Faz o botão se comportar como um item em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor quando passa sobre o botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação suave para hover */
+}
+
+/* Efeito de hover no botão */
+#start-button:hover {
+    background-color: #45a049; /* Cor mais escura quando o botão é "hovered" */
+    transform: scale(1.05); /* Um efeito de aumento no botão */
+}
+
+/* Efeito de clique no botão */
+#start-button:active {
+    background-color: #3e8e41; /* Cor ainda mais escura quando o botão é clicado */
+    transform: scale(0.95); /* Efeito de clique (botão se "contrai") */
+}
+
+/* Estilo do texto */
 .container__texto {
     margin: 16px 0 16px 0;
 }
@@ -85,27 +129,4 @@ button {
 h2 {
     font-size: 32px;
     font-weight: 400;
-}
-#start-button {
-    background-color: #4CAF50; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    padding: 15px 32px; /* Espaçamento interno (altura e largura) */
-    text-align: center; /* Alinhamento do texto */
-    text-decoration: none; /* Retira o sublinhado (caso seja um link) */
-    display: inline-block; /* Faz o botão se comportar como um item em linha */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor quando passa sobre o botão */
-    border: none; /* Remove borda padrão */
-    border-radius: 5px; /* Borda arredondada */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação suave para hover */
-}
-#start-button:hover {
-    background-color: #45a049; /* Cor mais escura quando o botão é "hovered" */
-    transform: scale(1.05); /* Um efeito de aumento no botão */
-}
-
-#start-button:active {
-    background-color: #3e8e41; /* Cor ainda mais escura quando o botão é clicado */
-    transform: scale(0.95); /* Efeito de clique (botão se "contrai") */
 }
