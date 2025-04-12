@@ -100,3 +100,12 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Animação suave para hover */
 }
+#start-button:hover {
+    background-color: #45a049; /* Cor mais escura quando o botão é "hovered" */
+    transform: scale(1.05); /* Um efeito de aumento no botão */
+}
+
+#start-button:active {
+    background-color: #3e8e41; /* Cor ainda mais escura quando o botão é clicado */
+    transform: scale(0.95); /* Efeito de clique (botão se "contrai") */
+}
