@@ -58,16 +58,16 @@ body::before {
 }
 
 /* Estilo do botão e da área de texto */
-.container__botao-container {
+/*.container__botao-container {
     display: flex;
     justify-content: center; /* Centraliza o botão horizontalmente */
-    align-items: center; /* Centraliza o botão verticalmente */
-    position: absolute; /* Faz o botão flutuar sobre a tela */
-    bottom: 20px; /* Ajuste a posição do botão para estar mais baixo */
-    width: 100%; /* Garante que ocupe toda a largura da container */
+  /*  align-items: center; /* Centraliza o botão verticalmente */
+   /* position: absolute; /* Faz o botão flutuar sobre a tela */
+   /* bottom: 20px; /* Ajuste a posição do botão para estar mais baixo */
+   /* width: 100%; /* Garante que ocupe toda a largura da container */
 }
 
-.container__botao {
+/*.container__botao {
     border-radius: 16px;
     background: #1875E8;
     padding: 16px 24px;
@@ -79,31 +79,31 @@ body::before {
 }
 
 /* Estilo do botão */
-#start-button {
-    background-color: #4CAF50; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    padding: 15px 32px; /* Espaçamento interno (altura e largura) */
-    text-align: center; /* Alinhamento do texto */
-    text-decoration: none; /* Retira o sublinhado (caso seja um link) */
-    display: inline-block; /* Faz o botão se comportar como um item em linha */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor quando passa sobre o botão */
-    border: none; /* Remove borda padrão */
-    border-radius: 5px; /* Borda arredondada */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação suave para hover */
+/*#start-button {
+    /* background-color: #4CAF50; /* Cor de fundo */
+    /*color: white; /* Cor do texto */
+    /*padding: 15px 32px; /* Espaçamento interno (altura e largura) */
+    /*text-align: center; /* Alinhamento do texto */
+    /*text-decoration: none; /* Retira o sublinhado (caso seja um link) */
+    /*display: inline-block; /* Faz o botão se comportar como um item em linha */
+    /*font-size: 16px; /* Tamanho da fonte */
+    /*cursor: pointer; /* Muda o cursor quando passa sobre o botão */
+    /*border: none; /* Remove borda padrão */
+    /*border-radius: 5px; /* Borda arredondada */
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    /*transition: background-color 0.3s ease, transform 0.2s ease; /* Animação suave para hover */
 }
 
 /* Efeito de hover no botão */
-#start-button:hover {
+/* #start-button:hover {
     background-color: #45a049; /* Cor mais escura quando o botão é "hovered" */
-    transform: scale(1.05); /* Um efeito de aumento no botão */
+    //* transform: scale(1.05); /* Um efeito de aumento no botão */
 }
 
 /* Efeito de clique no botão */
-#start-button:active {
+/*#start-button:active {
     background-color: #3e8e41; /* Cor ainda mais escura quando o botão é clicado */
-    transform: scale(0.95); /* Efeito de clique (botão se "contrai") */
+  /*  transform: scale(0.95); /* Efeito de clique (botão se "contrai") */
 }
 
 /* Estilo do texto */

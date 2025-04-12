@@ -1,7 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+//document.addEventListener('DOMContentLoaded', function() {
     
-const botaoIniciar = document.getElementById('start-button');
-function iniciarJogo(){
+//
+// const botaoIniciar = document.getElementById('start-button');
+//function iniciarJogo(){
 //Mostre um alerta com a mensagem "Boas vindas ao nosso site!".
 alert("Boas vindas ao nosso site!")
 
@@ -26,5 +27,5 @@ if(idadeDoUsuario >= 18){
     alert("Pode tirar a habilitação!");
 }
 }
-botaoIniciar.addEventListener('click',iniciarJogo);
+//botaoIniciar.addEventListener('click',iniciarJogo);
 });
