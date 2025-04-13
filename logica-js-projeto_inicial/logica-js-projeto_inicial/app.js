@@ -1,19 +1,32 @@
-//document.addEventListener('DOMContentLoaded', function() {
-    function iniciarDesafio1(){
+//document.addEventListener('DOMContentLoaded', function() 
+//função para formatar o nome
+function formatarNome(nomeDoUsuario){
+    return nomeDoUsuario.charAt(0).toUpperCase() + nomeDoUsuario.slice(1).toLowerCase();
+                
+}
+
+//função principal do Desafio 1- possivel botão futuramente
+function iniciarDesafio1(){
         //Primeira etapa - boas vindas
         alert("Boas vindas ao nosso site!")
         //Segunda etapa nome 
  let nomeDoUsuario = prompt("Digite o seu nome");  
         //verificação do nome
-        if(nome == null || nome.trim()=== ""){
+        if(nomeDoUsuario == null || nomeDoUsuario.trim()=== ""){
             alert("você está encerrando o cadastro")
             return;
         }
              //exibindo o nome formatado no console
              console.log(formatarNome(nomeDoUsuario));
+             //Pedir idade 
+let idadeDoUsuario =prompt ("Digite a sua idade ")
+//Agora, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
+if(idadeDoUsuario >= 18){
+    alert("Pode tirar a habilitação!");
+}
     }
-//}
-    //Primeira etapa- nome
+
+    //variaveis Ficticias-Serão usadas na segunda versão
         //Declare uma variável chamada nome e atribua a ela o valor "Lua".
 let nome = "Lua"
 //Crie uma variável chamada idade e atribua a ela o valor 25.
@@ -28,37 +41,12 @@ let saldoDisponivel = 1000
 //Declare uma variável chamada mensagemDeErro e atribua a ela o valor "Erro! Preencha todos os campos" Agora exiba um alerta com o valor da variável mensagemDeErro.
 let mensagemDeErro = "Erro!Preencha todos os campos"
 // const botaoIniciar = document.getElementById('start-button');
-//function iniciarJogo(){
-//Mostre um alerta com a mensagem "Boas vindas ao nosso site!".
 
 
 
 
-
-//Use um prompt para perguntar o nome do usuário e armazená-lo na variável nome.
-
-if(nomeDoUsuario == null){
-    alert("Você está encerrando a avaliação");
-    return;
-} 
-else if(nomeDoUsuario.trim() === ""){
-    alert(mensagemDeErro);
-    return;
-}
-//Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.
-let idadeDoUsuario =prompt ("Digite a sua idade ")
-//Agora, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
-if(idadeDoUsuario >= 18){
-    alert("Pode tirar a habilitação!");
-}
-//}
 //botaoIniciar.addEventListener('click',iniciarJogo);
 //});
 
-
-//função para formatar o nome 
-function formatarNome(nomeDoUsuario){
-    return nomeDoUsuario.charAt(0).toUpperCase() + nomeDoUsuario.slice(1).toLowerCase();
-                
-}
-console.log(formatarNome(nomeDoUsuario));
+//Inicia o Desafio
+iniciarDesafio1();
