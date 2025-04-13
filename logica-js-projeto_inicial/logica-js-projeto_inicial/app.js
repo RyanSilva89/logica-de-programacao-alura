@@ -6,7 +6,12 @@ function formatarNome(nomeDoUsuario){
     return nomeDoUsuario.charAt(0).toUpperCase() + nomeDoUsuario.slice(1).toLowerCase();
                 
 }
+//verificando se tem somente letras
+function  validandoLetras(nomeDoUsuario){
+const regex = /^[A-Za-zÀ-ÿ\s]+$/;
+return regex.test(nomeDoUsuario);
 
+} 
 //função principal do Desafio 1- possivel botão futuramente
 function iniciarDesafio1(){
         //Primeira etapa - boas vindas
@@ -14,8 +19,8 @@ function iniciarDesafio1(){
         //Segunda etapa nome 
  let nomeDoUsuario = prompt("Digite o seu nome");  
         //verificação do nome
-        if(nomeDoUsuario == null || nomeDoUsuario.trim()=== ""){
-            alert("você está encerrando o cadastro")
+        if(nomeDoUsuario == null || nomeDoUsuario.trim()=== "" || !validandoLetras(nomeDoUsuario)){
+            alert("Nome inválido!Digite apenas letras");
             return;
         }
              //exibindo o nome formatado no console
