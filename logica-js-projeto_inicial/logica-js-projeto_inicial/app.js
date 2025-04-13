@@ -24,9 +24,11 @@ let mensagemDeErro = "Erro!Preencha todos os campos"
 let nomeDoUsuario = prompt("Digite o seu nome");
 if(nomeDoUsuario == null){
     alert("Você está encerrando a avaliação");
-    
-} else if(nomeDoUsuario.trim() === ""){
+    return;
+} 
+else if(nomeDoUsuario.trim() === ""){
     alert(mensagemDeErro);
+    return;
 }
 //Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.
 let idadeDoUsuario =prompt ("Digite a sua idade ")
