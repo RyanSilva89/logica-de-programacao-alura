@@ -18,14 +18,16 @@ let saldoDisponivel = 1000
 //alert("Erro! Preencha todos os campos")
 //Declare uma variável chamada mensagemDeErro e atribua a ela o valor "Erro! Preencha todos os campos" Agora exiba um alerta com o valor da variável mensagemDeErro.
 let mensagemDeErro = "Erro!Preencha todos os campos"
-while(mensagemDeErro == null){
-    alert("Você está encerrando a avaliação");
-    break;
-}
+
+
 //Use um prompt para perguntar o nome do usuário e armazená-lo na variável nome.
 let nomeDoUsuario = prompt("Digite o seu nome");
-
-
+if(nomeDoUsuario == null){
+    alert("Você está encerrando a avaliação");
+    
+} else if(nomeDoUsuario.trim() === ""){
+    alert(mensagemDeErro);
+}
 //Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.
 let idadeDoUsuario =prompt ("Digite a sua idade ")
 //Agora, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
