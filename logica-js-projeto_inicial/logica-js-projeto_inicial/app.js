@@ -20,12 +20,13 @@ alert("Erro! Preencha todos os campos")
 let mensagemDeErro = "Erro!Preencha todos os campos"
 while(mensagemDeErro == null){
     alert(mensagemDeErro);
-    
+
 }
 //Use um prompt para perguntar o nome do usuário e armazená-lo na variável nome.
 let nomeDoUsuario = prompt("Digite o seu nome");
 while(!nomeDoUsuario){
     alert("Por favor,digite o seu nome,não deixe o espço em branco");
+    nomeDoUsuario = prompt("Digite o seu nome")
 }
 //Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.
 let idadeDoUsuario =prompt ("Digite a sua idade ")
