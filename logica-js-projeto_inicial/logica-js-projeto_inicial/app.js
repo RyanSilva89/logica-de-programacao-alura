@@ -33,6 +33,7 @@ if(idadeDoUsuario >= 18){
 
 //função para formatar o nome 
 function formatarNome(nomeDoUsuario){
-    return nomeDoUsuario.charAt(0).toUpperCase() + nomeDoUsuario.slice(1);
+    return nomeDoUsuario.charAt(0).toUpperCase() + nomeDoUsuario.slice(1).toLowerCase();
+                
 }
 console.log(formatarNome(nomeDoUsuario));
