@@ -1,5 +1,7 @@
 //document.addEventListener('DOMContentLoaded', function() 
 //função para formatar o nome
+
+//função inrelevante
 function formatarNome(nomeDoUsuario){
     return nomeDoUsuario.charAt(0).toUpperCase() + nomeDoUsuario.slice(1).toLowerCase();
                 
@@ -29,11 +31,27 @@ idadeDoUsuario =  Number(idadeDoUsuario);
 //verifica se a idade é igual a 18 e se a idade é um número
 if(idadeDoUsuario >= 18 ){
     alert("Pode tirar a habilitação!");
-}else{
+}
+else{
     alert("Você não pode tirar a habilitação!");
     alert("Volte quando vc tiver 18 anos ")
 }
-    }
+
+alert("Curiosidade: Irá tirar habilitação de qual tipo de veiculo")
+let tipoDeVeiculo= prompt("Digite : 1 carro,2 moto e  3 caminhão");
+if(tipoDeVeiculo == 1){
+    alert("Você irá tirar a habilitação de carro");
+
+}else if(tipoDeVeiculo == 2){
+    alert("Você irá tirar a habilitação de moto");
+
+}else if (tipoDeVeiculo == 3 ){
+    alert("Você irá tirar a habilitação de caminhão");
+}
+//mensagem final
+alert("Fim do Desafio");
+}
+
 
    
 // const botaoIniciar = document.getElementById('start-button');
