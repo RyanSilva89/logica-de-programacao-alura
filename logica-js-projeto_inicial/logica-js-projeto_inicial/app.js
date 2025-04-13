@@ -1,13 +1,18 @@
 //document.addEventListener('DOMContentLoaded', function() {
     function iniciarDesafio1(){
         alert("Boas vindas ao nosso site!")
+        let nomeDoUsuario = prompt("Digite o seu nome");
+        if(nome == null || nome.trim()=== ""){
+            alert("você está encerrando o cadastro")
+            return;
+        }
 
-        //Primeira etapa- nome
+    }
+
+    //Primeira etapa- nome
         //Declare uma variável chamada nome e atribua a ela o valor "Lua".
 let nome = "Lua"
 //Crie uma variável chamada idade e atribua a ela o valor 25.
-
-    }
 
     let idade = 25
 //Defina uma variável numeroDeVendas e atribua a ela o valor 50.
@@ -27,7 +32,7 @@ let mensagemDeErro = "Erro!Preencha todos os campos"
 
 
 //Use um prompt para perguntar o nome do usuário e armazená-lo na variável nome.
-let nomeDoUsuario = prompt("Digite o seu nome");
+
 if(nomeDoUsuario == null){
     alert("Você está encerrando a avaliação");
     return;
