@@ -1,14 +1,18 @@
 //document.addEventListener('DOMContentLoaded', function() {
     function iniciarDesafio1(){
+        //Primeira etapa - boas vindas
         alert("Boas vindas ao nosso site!")
-        let nomeDoUsuario = prompt("Digite o seu nome");
+        //Segunda etapa nome 
+ let nomeDoUsuario = prompt("Digite o seu nome");  
+        //verificação do nome
         if(nome == null || nome.trim()=== ""){
             alert("você está encerrando o cadastro")
             return;
         }
-
+             //exibindo o nome formatado no console
+             console.log(formatarNome(nomeDoUsuario));
     }
-
+//}
     //Primeira etapa- nome
         //Declare uma variável chamada nome e atribua a ela o valor "Lua".
 let nome = "Lua"
