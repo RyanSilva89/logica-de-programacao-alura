@@ -9,7 +9,7 @@ let chute=prompt("Chute um número entre 1 e 10");
 
 //Condicionais
 if(numeroSecreto == chute){
-    alert ("Você acertou !");//se não for verdadeiro não irá mostrar a mesagem,será executando quando esssa condição for verdadeira.
+    alert (`Você acertou ! O número secreto é ${numeroSecreto}`);//se não for verdadeiro não irá mostrar a mesagem,será executando quando esssa condição for verdadeira.
 console.log("Você acertou!");//utilizado para fazer testes
 }else{
     alert("Você errou!");//se não for verdadeiro,irá mostra a mensgem da condição se não/else.
