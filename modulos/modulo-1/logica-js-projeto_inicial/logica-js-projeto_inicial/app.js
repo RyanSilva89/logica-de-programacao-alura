@@ -4,11 +4,12 @@ let diaSemana = prompt("Qual é o dia da semana?");
 if(diaSemana === "Sábado"  ||  diaSemana === "Domingo"){
     alert("Bom final de semana!");
 }else{
-    alert("Boa semana");
+    alert("Boa semana!");
 }
 //    - Caso contrário, mostre "Boa semana!".
 
 // 2. Verifique se um número digitado pelo usuário é positivo ou negativo.
+let num = prompt("Digite um número");
 if(num >= 0){
     alert("O número é positivo");
 }else if (num< 0){
