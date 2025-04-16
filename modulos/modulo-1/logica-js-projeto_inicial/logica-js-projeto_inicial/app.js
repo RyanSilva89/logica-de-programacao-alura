@@ -22,16 +22,17 @@ if(num >= 0){
 // variavel pontuação
 //tema:saúde condicionamento fisico
 let pontuacao = 0;
+let pontuacaomax = 100;
 let flexoes = prompt("Quantas flexões vc consegue fazer hoje?");
 if(flexoes == 5){
-    alert(`Sua pontuação é ${pontuacao + 20}`)
+    alert(`Sua pontuação é ${pontuacao + 20 - pontuacaomax}`)
 
 }else if (flexoes == 10){
-    alert(`Sua pontuação é ${pontuacao + 40}`)
+    alert(`Sua pontuação é ${pontuacao + 40 - pontuacaomax}`)
 }else if (flexoes == 15){
-    alert( `Sua pontuação é ${pontuacao + 60}`)
+    alert( `Sua pontuação é ${pontuacao + 60 - pontuacaomax}`)
 }else if (flexoes == 20){
-    alert(`Sua pontuação é ${pontuacao + 80}`)
+    alert(`Sua pontuação é ${pontuacao + 80 - pontuacaomax}`)
 
 }else if(flexoes == 25){
     alert(` Sua pontuação é ${pontuacao + 100}`)
