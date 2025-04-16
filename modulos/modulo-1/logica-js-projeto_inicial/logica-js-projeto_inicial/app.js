@@ -23,14 +23,15 @@ if(num >= 0){
 //tema:saúde condicionamento fisico
 let pontuacao = 0;
 let pontuacaomax = 100;
+let faltapontuacao =  pontuacaomax - pontuacao;
 let flexoes = prompt("Quantas flexões vc consegue fazer hoje?");
 if(flexoes == 5){
-    alert(`Sua pontuação é ${pontuacao + 20 - pontuacaomax}`)
+    alert(`Sua pontuação é ${pontuacao + 20} e faltam ${faltapontuacao} para 100`)
 
 }else if (flexoes == 10){
-    alert(`Sua pontuação é ${pontuacao + 40 - pontuacaomax}`)
+    alert(`Sua pontuação é ${pontuacao + 40} e faltam ${faltapontuacao} para 100`)
 }else if (flexoes == 15){
-    alert( `Sua pontuação é ${pontuacao + 60 - pontuacaomax}`)
+    alert( `Sua pontuação é ${pontuacao + 60} e faltam ${faltapontuacao} para 100`)
 }else if (flexoes == 20){
     alert(`Sua pontuação é ${pontuacao + 80 - pontuacaomax}`)
 
