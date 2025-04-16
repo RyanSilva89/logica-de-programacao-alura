@@ -19,6 +19,15 @@ if(num >= 0){
 //    - Mostre um alerta informando se o número é positivo ou negativo.
 
 // 3. Crie um sistema de pontuação para um jogo.
+// variavel pontuação
+//tema:saúde condicionamento fisico
+// Pergunta: quantas flexões vc consegue fazer hoje ?
+// se a quantidade for igual a 5 ,mostre a pontuação 20
+// se a quantidade for igual a 10 ,mostre a pontuação 40
+// se a quantidade for igual a 15 ,mostre a pontuação 60
+// se a quantidade for igual a 20 ,mostre a pontuação 80
+// se a quantidade for igual a 25 ,mostre a pontuação 100
+
 //    - Se a pontuação for maior ou igual a 100, mostre "Parabéns, você venceu!".
 //    - Caso contrário, mostre "Tente novamente para ganhar.".
 
