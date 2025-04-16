@@ -21,6 +21,24 @@ if(num >= 0){
 // 3. Crie um sistema de pontuação para um jogo.
 // variavel pontuação
 //tema:saúde condicionamento fisico
+let pontuacao = 0;
+let flexoes = prompt("Quantas flexões vc consegue fazer hoje?");
+if(flexoes == 5){
+    alert(`Sua pontuação é ${pontuacao + 20}`)
+
+}else if (flexoes == 10){
+    alert(`Sua pontuação é ${pontuacao + 40}`)
+}else if (flexoes == 15){
+    alert( `Sua pontuação é ${pontuacao + 60}`)
+}else if (flexoes == 20){
+    alert(`Sua pontuação é ${pontuacao + 80}`)
+
+}else if(flexoes == 25){
+    alert(` Sua pontuação é ${pontuacao + 100}`)
+
+}else {
+    alert("Precisa treinar mais para conseguir ganhar  .");
+}
 // Pergunta: quantas flexões vc consegue fazer hoje ?
 // se a quantidade for igual a 5 ,mostre a pontuação 20
 // se a quantidade for igual a 10 ,mostre a pontuação 40
