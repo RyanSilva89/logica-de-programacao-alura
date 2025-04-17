@@ -49,7 +49,11 @@ if(pontuacao >0){
 
 
 // 4. Crie uma mensagem que informa o usuário sobre o saldo da conta.
+let saldo = 1000;
+alert(`O seu saldo atual é ${saldo}`);
 //    - Use uma template string para incluir o valor do saldo na mensagem.
 
 // 5. Peça ao usuário para inserir seu nome usando o prompt.
+let nome = prompt("Digite o seu nome");
+alert(`Boas-vindas ${nome}`);
 //    - Em seguida, mostre um alerta de boas-vindas usando o nome inserido pelo usuário.
