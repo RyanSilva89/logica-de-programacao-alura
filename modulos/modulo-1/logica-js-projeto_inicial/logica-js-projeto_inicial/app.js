@@ -35,12 +35,16 @@ if(flexoes == 5){
 
 }else if(flexoes == 25){
     pontuacao +=100;
+}else if (flexoes > 25){
+    alert("Você ultrapassou o limite de flexões");
 }else {
     alert("treine mais para consegui ganhar!");
 }
  let faltapontuacao =  pontuacaomax - pontuacao;
 if(pontuacao >0){
     alert(`Sua pontuacao é ${pontuacao} e faltam ${faltapontuacao} para chegar no 100`);
+}else{
+    alert("Você não é iniciante")
 }
 
 
