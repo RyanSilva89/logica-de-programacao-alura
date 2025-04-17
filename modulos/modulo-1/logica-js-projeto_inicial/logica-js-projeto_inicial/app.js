@@ -23,33 +23,26 @@ if(num >= 0){
 //tema:saúde condicionamento fisico
 let pontuacao = 0;
 let pontuacaomax = 100;
-let faltapontuacao =  pontuacaomax - pontuacao;
 let flexoes = prompt("Quantas flexões vc consegue fazer hoje?");
 if(flexoes == 5){
-    alert(`Sua pontuação é ${pontuacao + 20} e faltam ${faltapontuacao} para 100`)
-
+    pontuacao += 20;
 }else if (flexoes == 10){
-    alert(`Sua pontuação é ${pontuacao + 40} e faltam ${faltapontuacao} para 100`)
+    pontuacao += 40;
 }else if (flexoes == 15){
-    alert( `Sua pontuação é ${pontuacao + 60} e faltam ${faltapontuacao} para 100`)
+    pontuacao += 60;
 }else if (flexoes == 20){
-    alert(`Sua pontuação é ${pontuacao + 80 - pontuacaomax}`)
+   pontuacao +=80
 
 }else if(flexoes == 25){
-    alert(` Sua pontuação é ${pontuacao + 100}`)
-
+    pontuacao +=100;
 }else {
-    alert("Precisa treinar mais para conseguir ganhar  .");
+    alert("treine mais para consegui ganhar!");
 }
-// Pergunta: quantas flexões vc consegue fazer hoje ?
-// se a quantidade for igual a 5 ,mostre a pontuação 20
-// se a quantidade for igual a 10 ,mostre a pontuação 40
-// se a quantidade for igual a 15 ,mostre a pontuação 60
-// se a quantidade for igual a 20 ,mostre a pontuação 80
-// se a quantidade for igual a 25 ,mostre a pontuação 100
+ let faltapontuacao =  pontuacaomax - pontuacao;
+if(pontuacao >0){
+    alert(`Sua pontuacao é ${pontuacao} e faltam ${faltapontuacao} para chegar no 100`);
+}
 
-//    - Se a pontuação for maior ou igual a 100, mostre "Parabéns, você venceu!".
-//    - Caso contrário, mostre "Tente novamente para ganhar.".
 
 // 4. Crie uma mensagem que informa o usuário sobre o saldo da conta.
 //    - Use uma template string para incluir o valor do saldo na mensagem.
