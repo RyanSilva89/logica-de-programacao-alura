@@ -13,4 +13,8 @@ let chute=prompt("Chute um número entre 1 e 10");
 console.log("Você acertou!");//utilizado para fazer testes
     }else{
     alert("Você errou!");//se não for verdadeiro,irá mostra a mensgem da condição se não/else.
+}if(chute > numeroSecreto){
+    alert(`O número secreto é menor que o chute${chute}`);
+}else{
+    alert (`o número secreto é maior que o chute${chute}`);
 }
