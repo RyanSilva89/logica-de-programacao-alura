@@ -2,7 +2,7 @@
 //alert("Hello World"); // primeiro comando
 
 alert("Seja bem vindo ao Jogo número secreto");
-let numeroSecreto = 6;
+let numeroSecreto = parseInt(Math.random()*10 + 1);
 console.log(numeroSecreto);
 let chute;
 let tentativas = 1;
