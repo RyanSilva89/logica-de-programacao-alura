@@ -13,16 +13,22 @@ let tentativas = 1;
 while(chute != numeroSecreto){
         chute = prompt("Chute um número entre 1 e 10 ");
 //Condicionais
-        if(numeroSecreto == chute){
-            alert (`Você acertou ! O número secreto é ${numeroSecreto} com ${tentativas} tentativas`);//se não for verdadeiro não irá mostrar a mesagem,será executando quando esssa condição for verdadeira.
-    console.log("Você acertou!");//utilizado para fazer testes
-    break;
+            if(numeroSecreto == chute){
+                break;
+        console.log("Você acertou!");//utilizado para fazer testes
+    
+            } else{
+            alert("Você errou!");//se não for verdadeiro,irá mostra a mensgem da condição se não/else.
+            }if(chute > numeroSecreto){
+            alert(`O número secreto é menor que o chute ${chute}e vc tem ${tentativas } tentativas até o momento`);
         }else{
-        alert("Você errou!");//se não for verdadeiro,irá mostra a mensgem da condição se não/else.
-        }if(chute > numeroSecreto){
-        alert(`O número secreto é menor que o chute ${chute}e vc tem ${tentativas } tentativas até o momento`);
-    }else{
-        alert (`o número secreto é maior que o chute  ${chute} e vc tem ${tentativas } tentativas até o momento`);
+            alert (`o número secreto é maior que o chute  ${chute} e vc tem ${tentativas } tentativas até o momento`);
+    }
+    tentativas++;
+    }
+if(tentativas == 1){
+    alert(`O número secreto era ${numeroSecreto} e você acertou com apenas ${tentativas} tentativa`);
+}else{
+    alert(`O número secreto era ${numeroSecreto} e você acertou com apenas ${tentativas} tentativas`);
 }
-tentativas++;
-}
+ alert (`Você acertou ! O número secreto é ${numeroSecreto} com ${tentativas} tentativas`);//se não for verdadeiro não irá mostrar a mesagem,será executando quando esssa condição for verdadeira.
