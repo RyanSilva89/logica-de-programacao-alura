@@ -14,7 +14,7 @@ while(contador >= 0){
 }
 //Crie um programa de contagem regressiva. Peça um número e conte deste número até 0, usando um loop while no console do navegador.
 console.log("Contagem regressiva");
-contador = prompt("Digite um número");
+contador = Number(prompt("Digite um número"));
 while(contador >= 0){
     console.log(contador);
     contador--;
@@ -22,8 +22,8 @@ while(contador >= 0){
 //Crie um programa de contagem progressiva. Peça um número e conte de 0 até esse número, usando um loop while no console do navegador.
 console.log("Contagem progressiva");
 contador= 0;
-let numerofinal=prompt("Digite um número");
-while(0<=contador){
+let numerofinal= Number(prompt("Digite um número"));
+while(contador <= numerofinal){
     console.log(contador);
     contador++;
 
